@@ -88,6 +88,6 @@ app.use(function(err, req, res, next) {
   res.send('error');
 });
 
-server.listen(3000, function() {
-  console.log('Server running in port 3000');
+server.listen(process.env.PORT || 5000, function() {
+  console.log('Server running in port ', process.env.PORT || 5000);
 });
