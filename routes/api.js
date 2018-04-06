@@ -78,6 +78,7 @@ const newsArrayToResObj = function(news) {
 
 function checkPermissions(req, res, next){
   console.log('checkPermissions', req.path);
+  console.log('req.session.cookie', req.session.cookie);
   if(req.isAuthenticated()){
     let isTrue = false;
     const rout = req.path.substr(0, req.path.indexOf('/', 1) >0 ? req.path.indexOf('/', 1) : req.path.length);
