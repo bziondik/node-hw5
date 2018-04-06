@@ -32,7 +32,6 @@ app.use(session({
   secret: 'bziondik',
   key: 'bzkeys',
   cookie: {
-    domain: 'localhost',
     path: '/',
     httpOnly: true,
     maxAge: 2000000000
